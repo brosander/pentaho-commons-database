@@ -74,7 +74,7 @@ public class H2DatabaseDialect extends AbstractDatabaseDialect {
       }
       else
       {
-          return getNativeJdbcPre() + "h2://" + databaseConnection.getHostname()+ ":" + databaseConnection.getDatabasePort() +"/"+databaseConnection.getDatabaseName();
+          return getNativeJdbcPre() + "tcp://" + databaseConnection.getHostname()+ ":" + databaseConnection.getDatabasePort() +"/"+databaseConnection.getDatabaseName();
       }       
     }
   }
